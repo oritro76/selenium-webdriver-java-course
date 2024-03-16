@@ -22,7 +22,7 @@ public class BaseTests {
 
     @BeforeClass
     public void setUp(){
-        var driverExtention = "";
+        var driverExtention = ".exe";
         if(System.getenv("RUNNER_OS") != null) {
             driverExtention = "-linux";
         };

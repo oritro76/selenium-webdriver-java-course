@@ -1,6 +1,8 @@
 package exercises.chapter4.passwords;
 
 import base.BaseTests;
+
+import org.testng.annotations.Ignore;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
