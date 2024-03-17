@@ -1,4 +1,4 @@
-#Even name
+#Event name
 name: on_push
 
 #When the event should run
@@ -9,9 +9,7 @@ on:
       - "**" # this will run on all branches, must be quoted to be handled by github
 
 # what jobs to execute
-
 jobs:
-
   build_and_test:
     runs-on: ubuntu-latest
     env:
@@ -20,7 +18,7 @@ jobs:
 
     steps:
       - name: Set the start time 
-        -run: echo "START_TIME=$(DATE +%s)" >> $GITHUB_ENV
+        run: echo "START_TIME=$(DATE +%s)" >> $GITHUB_ENV
       - uses: actions/checkout@v2
       #install java
       - uses: actions/setup-java@v4.2.1
